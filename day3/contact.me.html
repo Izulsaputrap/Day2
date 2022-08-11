@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="css/style.css">
     <title>Contact me</title>
@@ -34,7 +33,7 @@
         <form action="">
             <div style="margin-bottom: 15px;">
                 <label for="input-Name" style="font-size: 20px; font-weight: 700;">Name</label>
-                <input id="input-Name" type="text" required placholder="input your name" style="
+                <input id="input-Name" type="text" style="
                         width: 100%;
                         box-sizing: border-box;
                         padding: 8px;
@@ -58,7 +57,7 @@
 
            <div style="margin-bottom: 15px;">
                 <label for="input-Phone" style="font-size: 20px; font-weight: 700;">Phone Number</label>
-                <input id="Phone" type="text" style="
+                <input id="input-Phone" type="text" style="
                         width: 100%;
                         box-sizing: border-box;
                         padding: 8px;
@@ -70,7 +69,7 @@
 
            <div style="margin-bottom: 20px;">
                 <label for="input-Subject" style="font-size: 20px; font-weight: 700;">Subject</label>
-                <select id="Subject" style="
+                <select id="input-Subject" style="
                         width: 100%;
                         box-sizing: border-box;
                         padding: 8px;
@@ -78,16 +77,17 @@
                         border: 1px solid grey;
                         border-radius: 4px;
                         margin:auto ;">
-                        <option value="">last talk</option>
-                        <option value="">last Colaboration</option>
-                        <option value="">last lets Creat Project</option>
+                        <option value="">select</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="Last Colaboration">last Colaboration</option>
+                        <option value="Last Lets Creat Project">last lets Creat Project</option>
                 </select>
 
            </div>
 
            <div style="margin-bottom: 20px;">
                 <label for="input-Massage" style="font-size: 20px; font-weight: 700;">Your Massage</label>
-                <textarea id="massage" cols="30" rows="10" style="
+                <textarea id="input-Massage" cols="30" rows="10" style="
                 width: 100%;
                 box-sizing: border-box;
                 padding: 8px;
@@ -96,23 +96,21 @@
                 border-radius: 4px;
                 margin:auto ;
                 resize: none;
-                height: 100px;"
-                placeholder="input your massage"></textarea>
+                height: 100px;"></textarea>
 
            </div>
 
-           <button type="submit" style="
+           <button type="button" onclick="submitData()" style="
                 background-color:rgb(0, 0, 0);
                 color:rgb(252, 252, 252);
                 border: none;
                 padding: 8px 30px; 
                 border-radius: 100px;
-                cursor: pointer;
-                ">submit</button>
+                cursor: pointer;">submit</button>
         </form>
 
     </div>    
 </body>
-
+<script src="form.js"></script>
 
 </html> 

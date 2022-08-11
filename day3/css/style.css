@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    background-color: rgb(216, 215, 215);
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 7vh;
+    display: flex;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+} 
+
+nav .left-side {
+    flex: 50%;
+    padding-left: 90px;
+}
+
+nav .right-side {
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 40px;
+}
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-weight: 700;
+}
+nav ul li a.active{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+}
+nav .right-side a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.personal {
+    height: 97vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.container-content{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+}
+.container-content .left{
+    flex: 90%;
+    padding: 20px;
+
+}
+.container-content .sosmed i{
+    font-size: 40px;
+    margin-left: 20px;
+} 
